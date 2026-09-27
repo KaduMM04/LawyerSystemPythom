@@ -1,9 +1,15 @@
 from django.contrib import admin
 
-from .models import Cliente
+from .models import Cliente, Advogado
 
 
 @admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
     list_display = ("nome", "cpf_cnpj", "email", "telefone", "data_cadastro")
     search_fields = ("nome", "cpf_cnpj", "email")
+
+
+@admin.register(Advogado)
+class AdvogadoAdmin(admin.ModelAdmin):
+    list_display = ("nome", "oab", "email", "telefone", "data_cadastro")
+    search_fields = ("nome", "oab", "email")
