@@ -60,8 +60,6 @@ python manage.py runserver
 A API fica em `http://127.0.0.1:8000/api/`. Abrindo no navegador, a interface do DRF
 lista os recursos.
 
-Testes: `python manage.py test core`
-
 ## Endpoints
 
 Os três recursos (`clientes`, `advogados`, `processos`) seguem o mesmo padrão:
@@ -121,5 +119,4 @@ core/
   views/                # ModelViewSets com filtros
   urls.py               # DefaultRouter
   exceptions.py         # ProtectedError -> 400, erro inesperado -> 500 JSON
-  tests/test_api.py
 ```
