@@ -4,7 +4,10 @@
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
-    { "key": "baseUrl", "value": "http://127.0.0.1:8000/api" }
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8000/api"
+    }
   ],
   "item": [
     {
@@ -15,19 +18,42 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/clientes/", "host": ["{{baseUrl}}"], "path": ["clientes", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Criar Cliente",
           "request": {
             "method": "POST",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Fulano de Tal\",\n  \"cpf_cnpj\": \"12345678901\",\n  \"email\": \"fulano@example.com\",\n  \"telefone\": \"11999998888\",\n  \"endereco\": \"Rua Exemplo, 123\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/clientes/", "host": ["{{baseUrl}}"], "path": ["clientes", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                ""
+              ]
+            }
           }
         },
         {
@@ -35,31 +61,71 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/clientes/1/", "host": ["{{baseUrl}}"], "path": ["clientes", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Atualizar Cliente (PUT)",
           "request": {
             "method": "PUT",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Fulano da Silva\",\n  \"cpf_cnpj\": \"12345678901\",\n  \"email\": \"fulano@example.com\",\n  \"telefone\": \"11999998888\",\n  \"endereco\": \"Rua Exemplo, 123\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/clientes/1/", "host": ["{{baseUrl}}"], "path": ["clientes", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Atualizar Cliente (PATCH)",
           "request": {
             "method": "PATCH",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"telefone\": \"11888887777\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/clientes/1/", "host": ["{{baseUrl}}"], "path": ["clientes", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
@@ -67,7 +133,17 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/clientes/1/", "host": ["{{baseUrl}}"], "path": ["clientes", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/clientes/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "1",
+                ""
+              ]
+            }
           }
         }
       ]
@@ -80,19 +156,42 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/advogados/", "host": ["{{baseUrl}}"], "path": ["advogados", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Criar Advogado",
           "request": {
             "method": "POST",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Fulano de Tal\",\n  \"oab\": \"123456\",\n  \"email\": \"fulano@example.com\",\n  \"telefone\": \"11999998888\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/advogados/", "host": ["{{baseUrl}}"], "path": ["advogados", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                ""
+              ]
+            }
           }
         },
         {
@@ -100,31 +199,71 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/advogados/1/", "host": ["{{baseUrl}}"], "path": ["advogados", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Atualizar Advogado (PUT)",
           "request": {
             "method": "PUT",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"nome\": \"Fulano da Silva\",\n  \"oab\": \"123456\",\n  \"email\": \"fulano@example.com\",\n  \"telefone\": \"11999998888\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/advogados/1/", "host": ["{{baseUrl}}"], "path": ["advogados", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
           "name": "Atualizar Advogado (PATCH)",
           "request": {
             "method": "PATCH",
-            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
             "body": {
               "mode": "raw",
               "raw": "{\n  \"telefone\": \"11888887777\"\n}"
             },
-            "url": { "raw": "{{baseUrl}}/advogados/1/", "host": ["{{baseUrl}}"], "path": ["advogados", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                "1",
+                ""
+              ]
+            }
           }
         },
         {
@@ -132,7 +271,298 @@
           "request": {
             "method": "DELETE",
             "header": [],
-            "url": { "raw": "{{baseUrl}}/advogados/1/", "host": ["{{baseUrl}}"], "path": ["advogados", "1", ""] }
+            "url": {
+              "raw": "{{baseUrl}}/advogados/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "advogados",
+                "1",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Processo",
+      "item": [
+        {
+          "name": "Listar Processos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/processos/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Filtrar Processos (cliente e valor)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/processos/?cliente=1&valor__gte=1000",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "cliente",
+                  "value": "1"
+                },
+                {
+                  "key": "valor__gte",
+                  "value": "1000"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Processos sem advogado",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/processos/?advogado__isnull=true",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "advogado__isnull",
+                  "value": "true"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Criar Processo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/processos/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                ""
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tipo\": \"Trabalhista\",\n  \"descricao\": \"Cobrança de horas extras\",\n  \"valor\": \"1500.00\",\n  \"cliente_id\": 1,\n  \"advogado_id\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Buscar Processo por ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/processos/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                "1",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Processo (PUT)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/processos/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                "1",
+                ""
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tipo\": \"Trabalhista\",\n  \"descricao\": \"Cobrança de horas extras\",\n  \"valor\": \"1800.00\",\n  \"cliente_id\": 1,\n  \"advogado_id\": 1\n}"
+            }
+          }
+        },
+        {
+          "name": "Atualizar Processo (PATCH)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/processos/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                "1",
+                ""
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"valor\": \"2000.00\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Deletar Processo",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/processos/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                "1",
+                ""
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Erros esperados",
+      "item": [
+        {
+          "name": "400 - CPF inválido",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/clientes/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                ""
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nome\": \"Teste\",\n  \"cpf_cnpj\": \"123\"\n}"
+            }
+          }
+        },
+        {
+          "name": "400 - Processo com cliente inexistente",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/processos/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "processos",
+                ""
+              ]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tipo\": \"Cível\",\n  \"valor\": \"800.00\",\n  \"cliente_id\": 9999\n}"
+            }
+          }
+        },
+        {
+          "name": "400 - Deletar cliente com processos",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/clientes/1/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "1",
+                ""
+              ]
+            }
+          }
+        },
+        {
+          "name": "404 - Cliente inexistente",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/clientes/9999/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "clientes",
+                "9999",
+                ""
+              ]
+            }
           }
         }
       ]
